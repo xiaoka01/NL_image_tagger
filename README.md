@@ -51,6 +51,11 @@ pip install huggingface_hub gradio transformers pillow tqdm autoawq --upgrade
 python downloadmodel.py
 ```
 
+（如果所处的地区无法直连huggingface，可以使用镜像下载模型）
+```shell
+HF_ENDPOINT=https://hf-mirror.com python downloadmodel.py
+```
+
 ### 3. 启动主程序
 
 ```shell
