@@ -13,9 +13,13 @@
   - 测试结果：此模型在使用 RTX 4070 SUPER 12G 时的打标速度约为 10 秒/张  
   - 测试者：[zzc0208](https://github.com/zzc0208)
 
-- **[OpenGVLab/InternVL2-26B-AWQ](https://huggingface.co/OpenGVLab/InternVL2-26B-AWQ)**
+- **[OpenGVLab/InternVL2_5-8B-AWQ](https://huggingface.co/OpenGVLab/InternVL2_5-8B-AWQ)**
+  - 需求：10G VRAM，此版本为AWQ量化模型，需要安装autoawq相关依赖
+  - 测试者：[聪明晓卡](https://github.com/xiaoka01)
 
-- **[OpenGVLab/InternVL2-40B-AWQ](https://huggingface.co/OpenGVLab/InternVL2-40B-AWQ)**
+- **[OpenGVLab/InternVL2_5-26B-AWQ](https://huggingface.co/OpenGVLab/InternVL2_5-26B-AWQ)**
+  - 需求：32G VRAM，此版本为AWQ量化模型，需要安装autoawq相关依赖
+  - 测试者：[聪明晓卡](https://github.com/xiaoka01)
 
 ---
 
@@ -36,7 +40,7 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 #### 1.2. 安装其余依赖
 
 ```shell
-pip install huggingface_hub gradio transformers pillow tqdm --upgrade
+pip install huggingface_hub gradio transformers pillow tqdm autoawq --upgrade
 ```
 
 ### 2. 下载模型
